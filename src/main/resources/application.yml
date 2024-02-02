@@ -8,5 +8,7 @@ eureka:
     fetchRegistry: false
   instance:
     hostname: ${EUREKA_HOST:localhost}
+    securePortEnabled: true
+    securePort: 443  # Puerto seguro (HTTPS) que se utilizará en las URLs asignadas
   server:
     renewal-percent-threshold: 0.90
